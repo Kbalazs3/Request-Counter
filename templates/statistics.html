@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8>">
+        <title>Statistics</title>
+    </head>
+    <h1>Statistics</h1>
+    <body><p>Stats</p>
+        <br>
+        <br>
+        <h2><a href="javascript:history.back()"></a></h2>
+        <br>
+    <br>
+        <table>
+            <tr>
+            <th>Get</th>
+            <th>Post</th>
+        </tr>
+            {% for key, value in data.items() %}
+                <tr>
+                    <td>{{key}}</td>
+                    <td>{{value}}</td>
+                </tr>
+            {% endfor %}
+    </table>
+    </body>
+
+</html>
